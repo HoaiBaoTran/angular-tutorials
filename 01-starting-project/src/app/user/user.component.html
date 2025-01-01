@@ -1,8 +1,12 @@
 <div>
+    <!-- <button (click)="onSelectUser()"> -->
+    <!-- <img [src]="imagePath" [alt]="selectedUser.name" /> Variable  -->
+    <!-- <img [src]="imagePath()" [alt]="selectedUser().name" /> Signal -->
+    <!-- <span>{{ selectedUser.name }}</span> Variable -->
+    <!-- <span>{{ selectedUser().name }}</span> Signal -->
+    <!-- </button> -->
     <button (click)="onSelectUser()">
-        <!-- <img [src]="imagePath" [alt]="selectedUser.name" /> Variable -->
-        <img [src]="imagePath()" [alt]="selectedUser().name" /> <!-- Signal -->
-        <!-- <span>{{ selectedUser.name }}</span> Variable -->
-        <span>{{ selectedUser().name }}</span> <!-- Signal -->
+        <img [src]="imagePath" [alt]="name">
+        <span>{{name}}</span>
     </button>
 </div>
