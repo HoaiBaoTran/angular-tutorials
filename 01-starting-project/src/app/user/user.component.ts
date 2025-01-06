@@ -1,4 +1,5 @@
-import { Component, computed, EventEmitter, Input, input, Output, output } from '@angular/core';
+import { Component, EventEmitter, Input, Output, output } from '@angular/core';
+import { type User } from './user.module';
 
 // const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
 // type User = {
@@ -7,12 +8,11 @@ import { Component, computed, EventEmitter, Input, input, Output, output } from 
 //   avatar: string,
 // }
 
-interface User {
-  id: string,
-  name: string,
-  avatar: string,
-}
-
+// interface User {
+//   id: string,
+//   name: string,
+//   avatar: string,
+// }
 
 @Component({
   selector: 'app-user',
