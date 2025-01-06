@@ -5,7 +5,7 @@
   <!-- <span>{{ selectedUser.name }}</span> Variable -->
   <!-- <span>{{ selectedUser().name }}</span> Signal -->
   <!-- </button> -->
-  <button (click)="onSelectUser()">
+  <button [class.active]="selected" (click)="onSelectUser()">
     <img [src]="imagePath" [alt]="user.name">
     <span>{{user.name}}</span>
   </button>
