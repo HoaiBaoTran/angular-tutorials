@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, Output, output } from '@angular/core';
 import { type User } from './user.module';
+import { CardComponent } from "../shared/card/card.component";
 
 // const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
 // type User = {
@@ -18,7 +19,8 @@ import { type User } from './user.module';
   selector: 'app-user',
   standalone: true,
   templateUrl: './user.component.html',
-  styleUrl: './user.component.css'
+  styleUrl: './user.component.css',
+  imports: [CardComponent]
 })
 export class UserComponent {
   // @Input({ required: true }) id!: string;
